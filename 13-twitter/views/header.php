@@ -1,50 +1,41 @@
-<!doctype html>
-<html lang="en" class="h-100">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    
-    <!-- Required meta tags -->
+    <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
-    <link type="text/css" rel= "stylesheet" href= "http://jkl2hostingpackage-com.stackstaging.com/13-twitter/styles.css">
-
-    
-  </head>
- <body class="d-flex flex-column h-100">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
       
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="http://jkl2hostingpackage-com.stackstaging.com/13-twitter/">Twitter</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="?page=timeline">Your Timeline</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="?page = yourtweets">Your Tweets</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="?page = publicprofiles">Public Profiles</a>
-                </li>
-                
-              </ul>
-              <div class="d-flex">
-                  
-                  <?php if ($_SESSION['id']) { ?>
-    
-                    <a class="btn btn-outline-success" href="?function=logout">Logout</a>
-                
-                  <?php } else { ?>
-                    
-                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Login/Signup</button>
-    
-                  <?php } ?>
-                
-                
-              </div>
-            </div>
-          </div>
-        </nav>
+      <link rel="stylesheet" href="http://completewebdevelopercourse.com/content/12-twitter/styles.css">
+  </head>
+  <body>
+      
+      <nav class="navbar navbar-light bg-faded">
+  <a class="navbar-brand" href="http://completewebdevelopercourse.com/content/12-twitter/">Twitter</a>
+  <ul class="nav navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="?page=timeline">Your timeline</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="?page=yourtweets">Your tweets</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="?page=publicprofiles">Public Profiles</a>
+    </li>
+  </ul>
+  <div class="form-inline pull-xs-right">
+      
+      <?php if ($_SESSION['id']) { ?>
+      
+        <a class="btn btn-success-outline" href="?function=logout">Logout</a>
+      
+      <?php } else { ?>
+      
+    <button class="btn btn-success-outline" data-toggle="modal" data-target="#myModal">Login/Signup</button>
+      
+      <?php } ?>
+  </div>
+</nav>

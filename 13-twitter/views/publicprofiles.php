@@ -1,31 +1,30 @@
-<div class = "container mainContainer">
+<div class="container mainContainer">
 
-  <div class="row">
-  <div class="col-8">
+    <div class="row">
+  <div class="col-md-8">
       
-  <?php if ($_GET['userid']) { ?>
-    
-    <?php displayTweets($_GET['userid']); ?>
-    
-    <?php } else { ?> 
+        <?php if ($_GET['userid']) { ?>
       
-      <h2>Active Users</h2>
+      <?php displayTweets($_GET['userid']); ?>
       
-      <?php displayUsers(); ?>
-    
-    <?php } ?>
+      <?php } else { ?> 
+        
+        <h2>Active Users</h2>
+        
+        <?php displayUsers(); ?>
       
-      </div>
+      <?php } ?>
       
-
-  <div class="col-4">
+        </div>
+  <div class="col-md-4">
+        
+        <?php displaySearch(); ?>
       
-      <?php displaySearch(); ?>
+      <hr>
       
-
       <?php displayTweetBox(); ?>
-      
-      </div>
-  </div>
-
+        
+        </div>
+</div>
+    
 </div>

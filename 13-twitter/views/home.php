@@ -1,23 +1,22 @@
-<div class = "container mainContainer">
+<div class="container mainContainer">
 
     <div class="row">
-    <div class="col-8">
+  <div class="col-md-8">
         
-        <h2>Recent tweets </h2>
+        <h2>Recent tweets</h2>
         
         <?php displayTweets('public'); ?>
-        
+      
         </div>
-    <div class="col-4">
+  <div class="col-md-4">
         
         <?php displaySearch(); ?>
-        
-   
-        
-        <?php displayTweetBox(); ?>
+      
+      <hr>
+      
+      <?php displayTweetBox(); ?>
         
         </div>
-  </div>
-
 </div>
-
+    
+</div>
