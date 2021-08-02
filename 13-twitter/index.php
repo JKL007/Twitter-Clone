@@ -10,7 +10,7 @@
       
     } else if ($_GET['page'] == 'yourtweets') {
         
-        include("views/yourtweets.php");
+      include("views/yourtweets.php");
         
     } else if ($_GET['page'] == 'search') {
         
@@ -25,8 +25,6 @@
       include("views/home.php");
 
     }
-      
-    
 
     include("views/footer.php");
 
